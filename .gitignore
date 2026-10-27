@@ -1,0 +1,26 @@
+﻿# MySQL runtime data
+db_data/
+db_data/**
+
+# Dependencies
+vendor/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Google OAuth secrets
+/password/google-config.php
+
+# IDE
+.vscode/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+password/google-config.php

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-green: #54a849;
+    --primary-pink: #FF69B4;
+    --deep-green: #2d5a27;
+    --bg-color: #f3f4f6;
+    --sidebar-bg: #ffffff;
+    --text-dark: #111827;
+    --text-muted: #6b7280;
+    --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===============================
+   Sidebar Styles
+   =============================== */
+.sidebar {
+    width: 260px;
+    background-color: var(--sidebar-bg);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-sm);
+    z-index: 100;
+}
+
+.logo {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.logo h2 {
+    font-size: 1.8rem;
+    color: var(--primary-green);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--primary-pink);
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.menu-item i {
+    font-size: 1.4rem;
+}
+
+.menu-item:hover, .menu-item.active {
+    background-color: rgba(84, 168, 73, 0.1);
+    color: var(--primary-green);
+}
+
+/* ===============================
+   Main Content Styles
+   =============================== */
+.main-content {
+    flex: 1;
+    margin-left: 260px;
+    padding: 40px;
+    width: calc(100% - 260px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.user-profile {
+    background: rgba(255, 105, 180, 0.1);
+    color: var(--primary-pink);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
