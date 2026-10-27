@@ -5,7 +5,7 @@ class Database {
     public static function connect() {
         if (self::$instance === null) {
             try {
-                $host = 'localhost';
+                $host = '127.0.0.1';
                 $db   = 'bottlebank_db';
                 $user = 'root';
                 $pass = 'wp_pass';
